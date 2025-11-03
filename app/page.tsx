@@ -148,7 +148,7 @@ export default function Home() {
                       className="flex items-start gap-2 text-sm text-gray-600"
                     >
                       <span className="text-green-600 mt-1">✓</span>
-                      <span>{feature}</span>
+                      <span className="mt-[4px]">{feature}</span>
                     </li>
                   ))}
                 </ul>
