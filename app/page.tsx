@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "@/assets/Group.png";
 import { questions } from "@/lib/questions";
 import {
   calculateScore,
@@ -53,6 +54,11 @@ export default function Home() {
     return (
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-green-50 py-8 px-4">
         <div className="max-w-2xl mx-auto">
+          {/* 로고 */}
+          <div className="mb-8 flex justify-start">
+            <img src={Image.src} alt="WinCL 로고" className="h-5" />
+          </div>
+
           <div className="bg-white rounded-2xl shadow-xl p-6 mb-6">
             <div className="flex items-center justify-between mb-4">
               <h1 className="text-2xl font-bold text-gray-900">
@@ -185,6 +191,11 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-green-50 py-8 px-4">
       <div className="max-w-2xl mx-auto">
+        {/* 로고 */}
+        <div className="mb-8 flex justify-start">
+          <img src={Image.src} alt="WinCL 로고" className="h-5" />
+        </div>
+
         {/* 진행률 표시 바 */}
         <div className="mb-6">
           <div className="flex justify-between items-center mb-2">
